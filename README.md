@@ -20,13 +20,7 @@
 
 2. 首页跳转至列表页
 
-<<<<<<< HEAD
  ![列表页](https://gitee.com/bastuu/images/raw/master/pyg-link2.png)
-
-3. 列表页跳转至详情页
-![详情页](https://gitee.com/bastuu/images/raw/master/pyg-link3.png)
-=======
-  ![列表页](https://gitee.com/bastuu/images/raw/master/pyg-link2.png)
 
 3. 列表页跳转至详情页
 
@@ -35,5 +29,3 @@
 4. 首页跳转至订单列表
 
   ![订单页](https://gitee.com/bastuu/images/raw/master/index-like.png)
-
->>>>>>> upload
