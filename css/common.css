@@ -1,0 +1,269 @@
+@charset "utf-8";
+/*
+ * ==============================
+ * @description: [WebSite] 公共样式模块
+ * @author: ---
+ * @update: ---
+ * ==============================
+*/
+/* 顶部快捷导航 start */
+.shortcut {
+  height: 31px;
+  line-height: 31px;
+  background-color: #f1f1f1;
+}
+.shortcut li {
+  float: left;
+}
+.shortcut li i {
+  margin-left: 5px;
+  font-size: 16px;
+  line-height: 21px;
+}
+.shortcut .spacer {
+  margin: 9px 12px 0;
+  width: 1px;
+  height: 12px;
+  background-color: #666;
+}
+/* header 开始 */
+header {
+  position: relative;
+  height: 105px;
+}
+header .logo {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 175px;
+  height: 56px;
+}
+header .logo a {
+  display: block;
+  /* overflow: hidden; */
+  width: 175px;
+  height: 56px;
+  background: url(../images/logo.png) no-repeat;
+  text-indent: -9999px;
+  font-size: 0;
+}
+header .search {
+  position: absolute;
+  top: 25px;
+  left: 348px;
+}
+header .search .text {
+  padding-left: 10px;
+  width: 445px;
+  height: 32px;
+  border: 2px solid #B1181A;
+  color: #ccc;
+}
+header .search .btn {
+  width: 82px;
+  height: 32px;
+  background-color: #B1181A;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 0;
+}
+header .hotwords {
+  position: absolute;
+  top: 65px;
+  left: 348px;
+}
+header .hotwords a {
+  margin: 0 10px;
+}
+header .shopcar {
+  position: absolute;
+  top: 25px;
+  right: 64px;
+  width: 138px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  border: 1px solid #dfdfdf;
+}
+header .shopcar .car {
+  font-size: 16px;
+  margin-right: 5px;
+}
+header .shopcar .arrow {
+  font-size: 14px;
+  margin-left: 5px;
+}
+header .shopcar .count {
+  position: absolute;
+  top: -8px;
+  /* 左侧对齐 文字才会往右走 */
+  left: 100px;
+  padding: 0 3px;
+  height: 14px;
+  line-height: 14px;
+  border-radius: 7px 7px 7px 0;
+  color: #fff;
+  background-color: #B1181A;
+}
+/* nva start */
+nav {
+  height: 45px;
+  border-bottom: 2px solid #B1181A;
+}
+nav .dorpdown {
+  width: 209px;
+  height: 45px;
+}
+nav .dorpdown .dt {
+  height: 100%;
+  line-height: 45px;
+  background-color: #B1181A;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+}
+nav .dorpdown .dd {
+  /* display:none; */
+  height: 465px;
+  background-color: #c81623;
+  color: #fff;
+}
+nav .dorpdown .dd .menu-item {
+  margin-left: 1px;
+  padding: 0 10px;
+  height: 31px;
+  line-height: 31px;
+  transition: all 0.5s;
+}
+nav .dorpdown .dd .menu-item:hover {
+  background-color: #fff;
+  padding-left: 20px;
+}
+nav .dorpdown .dd .menu-item:hover a {
+  color: #c81623;
+}
+nav .dorpdown .dd a {
+  float: left;
+  font-size: 14px;
+  color: #fff;
+}
+nav .dorpdown .dd i {
+  line-height: 31px;
+  float: right;
+}
+nav .navitems {
+  margin-left: 10px;
+}
+nav .navitems li {
+  float: left;
+}
+nav .navitems li a {
+  display: block;
+  padding: 0 25px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 16px;
+  color: #333;
+}
+nav .navitems li a:hover {
+  color: #B1181A;
+}
+/* 底部 start */
+footer {
+  padding-top: 30px;
+  height: 386px;
+  background-color: #f5f5f5;
+}
+footer .mod-server {
+  height: 79px;
+  border-bottom: 1px solid #ccc;
+}
+footer .mod-server li {
+  float: left;
+  width: 240px;
+  height: 79px;
+}
+footer .mod-server li .mod-server-icon {
+  margin-left: 35px;
+  float: left;
+  width: 50px;
+  height: 50px;
+  background: url(../images/icons.png) no-repeat;
+}
+footer .mod-server li .mod-server-icon.mod-server-zheng {
+  background-position: -253px -3px;
+}
+footer .mod-server li .mod-server-icon.mod-server-kuai {
+  background-position: -255px -54px;
+}
+footer .mod-server li .mod-server-icon.mod-server-bao {
+  background-position: -257px -105px;
+}
+footer .mod-server li .mod-server-icon.mod-server-tese {
+  background-position: -257px -156px;
+}
+footer .mod-server li .mod-server-icon.mod-server-help {
+  background-position: -256px -208px;
+}
+footer .mod-server li .mod-server-tit {
+  float: left;
+  margin-left: 5px;
+}
+footer .mod-server li .mod-server-tit h5 {
+  margin: 5px 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+footer .mod-server li .mod-server-zheng {
+  background-position: -253px -3px;
+}
+footer .mod-server li .mod-server-kuai {
+  background-position: -255px -54px;
+}
+footer .mod-server li .mod-server-bao {
+  background-position: -257px -105px;
+}
+footer .mod-server li .mod-server-tese {
+  background-position: -257px -156px;
+}
+footer .mod-server li .mod-server-help {
+  background-position: -256px -208px;
+}
+footer .mod-help {
+  height: 187px;
+  border-bottom: 1px solid #ccc;
+}
+footer .mod-help .mod-help-item {
+  float: left;
+  padding: 20px 0 0 50px;
+  width: 200px;
+}
+footer .mod-help .mod-help-item dt {
+  height: 25px;
+  font-size: 16px;
+}
+footer .mod-help .mod-help-item dd {
+  height: 22px;
+}
+footer .mod-help .mod-help-item dd a {
+  color: #2f2f2f;
+}
+footer .mod-help .mod-help-item dd a:hover {
+  color: #B1181A;
+}
+footer .mod-help .mod-help-app {
+  text-align: center;
+}
+footer .mod-help .mod-help-app img {
+  margin: 7px 0;
+}
+footer .mod-copyright {
+  text-align: center;
+  line-height: 18px;
+}
+footer .mod-copyright .mod-copyright-links {
+  padding: 20px 0 15px 0;
+}
+footer .mod-copyright .mod-copyright-links a {
+  padding-right: 5px;
+}

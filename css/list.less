@@ -1,0 +1,177 @@
+@charset "utf-8";
+/*
+ * ==============================
+ * @description: [WebSite] 公共样式模块
+ * @author: ---
+ * @update: ---
+ * ==============================
+*/
+/* 顶部快捷导航 start */
+@border_color:#ccc;
+@color:#c81623;
+.border-current{
+    border:1px solid #e12228;
+}
+/* 顶部秒杀 */
+.sk{
+    position:absolute;
+    top:40px;
+    left:185px;
+    padding:5px 0 0 15px;
+    height:32px;
+    border-left:1px solid @color;
+}
+
+/* nav */
+nav{overflow: hidden;}
+.sk-list{
+    li{
+        margin:0 25px;
+        float:left;
+        line-height:45px;
+        a{
+            font-size:16px;
+            font-weight:700;
+            color:#000;
+            &:hover{
+                color:@color;
+            }
+        }
+    }
+}
+.sk-con{
+    li{
+        float:left;
+        margin:0 20px;
+        line-height:45px;
+        a{
+            font-size:14px;
+            font-weight:700;
+            i{
+                margin-left:5px;
+            }
+        }
+
+    }
+}
+/* 列表页内容区域 */
+.sk-bd{
+    overflow: hidden;
+    margin-top:25px;
+    ul{
+        width:1212px;
+    }
+    li{
+        float:left;
+        margin:0 12px 15px 0;
+    }
+}
+.sk-goods{
+    width:288px;
+    height:458px;
+    border:1px solid transparent;
+    transition: all .2s;
+    &:hover{
+        .border-current;
+    }
+    img{
+        margin:22px 42px 10px;
+    }
+}
+.sk-goods-title{
+    padding:10px;
+    line-height:25px;
+    font-size:14px;
+    color:#666;
+    font-weight:normal;
+}
+.sk-goods-price{
+    padding:0 10px;
+    font-size:22px;
+    color:@color;
+    em{
+        font-size:14px;
+        font-weight: 700;
+        color:#a4a4a4;
+        text-decoration: line-through;
+    }
+}
+.sk-goods-progress{
+    padding:10px;
+    em,i{
+        color:@color;
+    }
+    .bar{
+        display:inline-block;
+        margin:0 10px;
+        width:130px;
+        height:10px;
+        vertical-align:middle;
+        border:1px solid @color;
+        border-radius:5px;
+        .bar-in{
+            width:87%;
+            height:100%;
+            background-color:@color;
+        }
+    }
+}
+.sk-goods-buy{
+    display:block;
+    height:50px; 
+    line-height:50px;
+    font-size:22px;
+    color:#fff;
+    text-align:center;
+    background-color: @color;
+    transition: all .5;
+    &:hover{
+        color:#fff;
+        font-size:25px;
+    }
+}
+
+/* 分页 */
+.page{
+    margin:40px 0;
+    text-align:center;
+    a{
+        display:inline-block;
+        width:36px;
+        height:36px;
+        line-height:36px;
+        border:1px solid #ccc;
+        background-color: #f7f7f7;
+        &.pn-prev,&.pn-next{
+            width:83px;
+        }
+        &.current{
+            border:1px solid transparent;
+            background:transparent;
+        }
+        &.dotted{
+            .current;
+        }
+        &:hover{
+            .current;
+        }
+    }
+    .page-skip{
+        input{
+            width:36px;
+            height:36px;
+            border:1px solid #ccc;
+            text-align: center;
+            transition: all .5s;
+            &:focus{
+                width:88px;
+                border-color:#00A1D6;
+            }
+        }
+        button{
+            width:54px;
+            height:36px;
+            border:1px solid #ccc;
+        }
+    }
+}

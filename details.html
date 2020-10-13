@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="品优购 品优购 品优购 品优购">
+    <meta name="Keyword" content="网上购物，****">
+    <title>手机详情页</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+    <!-- 引入facicon.ico -->
+    <link rel="shortcut icon" href="bitbug_favicon.ico">
+    <!-- 引入字体文件 -->
+    <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+    <!-- 引入css初始化文件 -->
+    <link rel="stylesheet" href="css/base.css">
+    <!-- 引入公共样式 -->
+    <link rel="stylesheet" href="css/common.css">
+    <!-- 引入详情页样式 -->
+    <link rel="stylesheet" href="css/details.css">
+</head>
+<body>
+    <!-- 顶部快捷导航 start -->
+    <div class="shortcut">
+        <div class="container">
+            <div class="fn-fl login">
+                <ul>
+                    <li>品优购欢迎您！</li>
+                    <li>
+                    <a href="login.html">请登录</a>
+                    <a href="register.html" class="style-red">免费注册</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="fn-fr">
+                <ul>
+                    <li><a href="#">我的订单</a></li>
+                    <li class="spacer"></li>
+                    <li><a href="#">我的品优购</a><i class="fa fa-angle-down"></i></li>
+                    <li class="spacer"></li>
+                    <li><a href="#">品优购会员</a></li>
+                    <li class="spacer"></li>
+                    <li><a href="#">企业采购</a></li>
+                    <li class="spacer"></li>
+                    <li><a href="#">关注品优购</a><i class="fa fa-angle-down"></i></li>
+                    <li class="spacer"></li>
+                    <li><a href="#">客户访问</a><i class="fa fa-angle-down"></i></li>
+                    <li class="spacer"></li>
+                    <li><a href="#">网站导航</a><i class="fa fa-angle-down"></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 顶部快捷导航 end -->
+    <!-- header 开始  -->
+    <header class="container">
+        <!-- logo -->
+        <div class="logo">
+        <h1><a href="index.html" title="品优购">品优购</a></h1>
+        </div>
+        <!-- search -->
+        <div class="search">
+            <input type="text" class="text fn-fl" value="请搜索内容……">
+            <button class="btn fn-fl">搜索</button>
+        </div>
+        <!-- hotwords -->
+        <div class="hotwords">
+            <a href="#" class="style-red">优惠购首发</a>
+            <a href="#">亿元优惠</a>
+            <a href="#">9.9元团购</a>
+            <a href="#">每满99减30</a>
+            <a href="#">办公用品</a>
+            <a href="#">电脑</a>
+            <a href="#">通信</a>
+        </div>
+        <div class="shopcar">
+            <i class="fa fa-shopping-cart style-red car"></i>我的购物车<i class="fa fa-angle-right arrow"></i>
+            <i class="count">80</i>
+        </div>
+    </header>
+    <!-- header 结束  -->
+    <!-- nav start -->
+    <nav>
+        <div class="container">
+            <div class="dorpdown fn-fl">
+                <div class="dt">全部商品分类</div>
+                <div class="dd" style="display: none;">
+                    <ul>
+                        <li class="menu-item"><a href="#">家用电器</a><i class="fa fa-angle-right"></i></li>
+                        <li class="menu-item"><a href="#">手机、</a><a href="#">数码、</a><a href="#">通信</a><i class="fa fa-angle-right"></i></li>
+                        <li class="menu-item"><a href="#">电脑、</a><a href="#">办公</a><i class="fa fa-angle-right"></i></li>
+                        <li class="menu-item"><a href="#">家居、</a><a href="#">家具、</a><a href="#">家装、</a><a href="#">厨具</a><i class="fa fa-angle-right"></i></li>
+                        <li class="menu-item"><a href="#">男装、</a><a href="#">女装、</a><a href="#">童装、</a><a href="#">内衣</a><i class="fa fa-angle-right"></i></li>
+                        <li class="menu-item"><a href="#">个户化妆、</a><a href="#">清洁用品、</a><a href="#">宠物</a><i class="fa fa-angle-right"></i></li>
+                        <li class="menu-item"><a href="#">鞋靴、</a><a href="#">箱包、</a><a href="#">珠宝、</a><a href="#">奢侈品</a><i class="fa fa-angle-right"></i></li>
+                        <li class="menu-item"><a href="#">运动户外、</a><a href="#">钟表</a><i class="fa fa-angle-right"></i></li>
+                        <li class="menu-item"><a href="#">汽车、</a><a href="#">汽车用品</a><i class="fa fa-angle-right"></i></li>
+                        <li class="menu-item"><a href="#">母婴、</a><a href="#">玩具乐器</a><i class="fa fa-angle-right"></i></li>
+                        <li class="menu-item"><a href="#">视频、</a><a href="#">酒类、</a><a href="#">生鲜、</a、<a href="#">特产</a><i class="fa fa-angle-right"></i></li>
+                        <li class="menu-item"><a href="#">医药保健</a><i class="fa fa-angle-right"></i></li>
+                        <li class="menu-item"><a href="#">图书、</a><a href="#">音响、</a><a href="#">电子书</a><i class="fa fa-angle-right"></i></li>
+                        <li class="menu-item"><a href="#">彩票、</a><a href="#">旅行、</a><a href="#">充值、</a><a href="#">票务</a><i class="fa fa-angle-right"></i></li>
+                        <li class="menu-item"><a href="#">理财、</a><a href="#">众筹、</a><a href="#">白条、</a><a href="#">保险</a><i class="fa fa-angle-right"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 右侧导航 -->
+            <div class="navitems fn-fl">
+                <ul>
+                    <li><a href="#">服装城</a></li>
+                    <li><a href="#">美妆馆</a></li>
+                    <li><a href="#">美妆超市</a></li>
+                    <li><a href="#">全球购</a></li>
+                    <li><a href="#">闪购</a></li>
+                    <li><a href="#">团购</a></li>
+                    <li><a href="#">拍卖</a></li>
+                    <li><a href="#">有趣</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- nav end -->
+
+    <!-- main主体部分 start -->
+    <div class="de-container container">
+        <!-- 面包屑导航 -->
+        <div class="crumb-wrap">
+            <a href="#">手机、数码、通讯</a><i class="fa fa-angle-right"></i>
+            <a href="#">手机</a><i class="fa fa-angle-right"></i>
+            <a href="#">Apple苹果</a><i class="fa fa-angle-right"></i>
+            <a href="#">iphone 6S Plus系列</a>
+        </div>
+        <!-- 产品介绍 -->
+        <div class="product-intro fn-clearfix">
+            <!-- 预览区域 -->
+            <div class="preview-wrap fn-fl">
+                <div class="preview-img">
+                    <img src="uploads/s3.png" alt="">
+                </div>
+                <div class="preview-list">
+                    <a href="#" class="arrow-prev"></a>
+                    <a href="#" class="arrow-next"></a>
+                    <ul class="list-item">
+                        <li class="current">
+                            <a href="#">
+                                <img src="uploads/lis-pr_03.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="uploads/lis-pr_03.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="uploads/lis-pr_03.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="uploads/lis-pr_03.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="uploads/lis-pr_03.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="preview-info">
+                    <ul>
+                        <li class="preview-info-num">
+                            商品编号：<em>0468256644</em>
+                        </li>
+                        <li class="preview-info-share">
+                            <a href="#"><i class="fa fa-share-alt"></i>分享</a>
+                        </li>
+                        <li class="preview-info-heart">
+                            <i class="fa fa-heart-o"></i>关注<em>5000</em>
+                        </li>
+                        <li class="preview-info-contrast">
+                            <a href="#"><i class="fa fa-recycle"></i>对比</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 产品详细信息 -->
+            <div class="itemifo-wrap fn-fr">
+                <div class="sku-name fn-fs16">
+                    Apple iPhone 6s（A1700）64G玫瑰金色 移动通信电信4G手机
+                </div>
+                <div class="news">
+                    推荐选择下方[移动优惠购],手机套餐齐搞定,不用换号,每月还有花费返
+                </div>
+                <!-- 摘要 -->
+                <div class="summary">
+                    <dl class="summary-price">
+                        <dt>价格</dt>
+                        <dd>
+                            <i class="price">￥5299.00</i>
+                            <div class="remark">累计评价<span>612188</span></div>
+                        </dd>
+                    </dl>
+                    <dl class="summary-promotion">
+                        <dt>促销</dt>
+                        <dd>
+                            <em>加购价</em>满999.00另加20.00元，或满1999.00另加30.00元，或满2999.00另加40.00元，即可在购物车换
+                            购热销商品<a href="#">详情 》</a>
+                        </dd>
+                    </dl>
+                    <dl class="summary-support">
+                        <dt>支持</dt>
+                        <dd>以旧换新，闲置手机回收  4G套餐超值抢  礼品购</dd>
+                    </dl>
+                    <dl class="choose-color">
+                        <dt>选择颜色</dt>
+                        <dd>
+                            <a href="javascript:;">金色</a>
+                            <a href="javascript:;">银色</a>
+                            <a href="javascript:;">黑色</a>
+                            <a href="javascript:;" class="current">玫瑰金</a>
+                        </dd>
+                    </dl>
+                    <dl class="choose-version">
+                        <dt>选择版本</dt>
+                        <dd>
+                            <a href="javascript:;" class="current">公开版</a>
+                            <a href="javascript:;">移动4G</a>
+                        </dd>
+                    </dl>
+                    <dl class="choose-capacity">
+                        <dt>选择容量</dt>
+                        <dd>
+                            <a href="javascript:;">16G</a>
+                            <a href="javascript:;">32G</a>
+                            <a href="javascript:;" class="current">64G</a>
+                            <a href="javascript:;">128G</a>
+                        </dd>
+                    </dl>
+                    <dl class="choose-type">
+                        <dt>购买方式</dt>
+                        <dd>
+                            <a href="javascript:;" class="current">官方标配</a>
+                            <a href="javascript:;">移动优惠购</a>
+                            <a href="javascript:;">电信优惠购</a>
+                        </dd>
+                    </dl>
+                    <dl class="choose-type">
+                        <dt>套装</dt>
+                        <dd>
+                            <a href="javascript:;">保护套装</a>
+                            <a href="javascript:;">充电套装</a>
+                        </dd>
+                    </dl>
+                    <div class="choose-btns">
+                        <div class="choose-amount fn-fl">
+                            <input type="text" value="1">
+                            <a href="javascript:;" class="add">+</a>
+                            <a href="javascript:;" class="reduce">-</a>
+                        </div>
+                        <a href="javascript:;" class="add-car fn-fl fn-fs18">加入购物车</a>
+                        <div class="choose-border fn-fl"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- 产品细节 -->
+        <div class="product-detail fn-clearfix">
+            <!-- aside -->
+            <div class="aside fn-fl">
+                <div class="tab-list">
+                    <ul>
+                        <li class="first-tab current">相关分类</li>
+                        <li class="second-tab">推荐品牌</li>
+                    </ul>
+                </div>
+                <div class="tab-con">
+                    <ul class="tab-con-list">
+                        <li><a href="#">手机</a></li>
+                        <li><a href="#">手机壳</a></li>
+                        <li><a href="#">内存卡</a></li>
+                        <li><a href="#">iphone配件</a></li>
+                        <li><a href="#">贴膜</a></li>
+                        <li><a href="#">手机耳机</a></li>
+                        <li><a href="#">移动电源</a></li>
+                        <li><a href="#">平板电脑</a></li>
+                        <li><a href="#">笔记本</a></li>
+                        <li><a href="#">蓝牙耳机</a></li>
+                        <p>购买了此商品的用户还买了</p>
+                    </ul>
+                    <ul class="tab-con-item">
+                        <li>
+                            <img src="uploads/like_04.png" alt="">
+                            <h5>宇博 10000mah 双USB Y7移动电源</h5>
+                            <div class="aside-price">￥19</div>
+                            <a href="#" class="as-addcar">加入购物车</a>
+                        </li>
+                    </ul>
+                    <ul class="tab-con-item">
+                        <li>
+                            <img src="uploads/like_04.png" alt="">
+                            <h5>宇博 10000mah 双USB Y7移动电源</h5>
+                            <div class="aside-price">￥19</div>
+                            <a href="#" class="as-addcar">加入购物车</a>
+                        </li>
+                    </ul>
+                    <ul class="tab-con-item">
+                        <li>
+                            <img src="uploads/like_04.png" alt="">
+                            <h5>宇博 10000mah 双USB Y7移动电源</h5>
+                            <div class="aside-price">￥19</div>
+                            <a href="#" class="as-addcar">加入购物车</a>
+                        </li>
+                    </ul>
+                    <ul class="tab-con-item">
+                        <li>
+                            <img src="uploads/like_04.png" alt="">
+                            <h5>宇博 10000mah 双USB Y7移动电源</h5>
+                            <div class="aside-price">￥19</div>
+                            <a href="#" class="as-addcar">加入购物车</a>
+                        </li>
+                    </ul>
+                    <ul class="tab-con-item">
+                        <li>
+                            <img src="uploads/like_04.png" alt="">
+                            <h5>宇博 10000mah 双USB Y7移动电源</h5>
+                            <div class="aside-price">￥19</div>
+                            <a href="#" class="as-addcar">加入购物车</a>
+                        </li>
+                    </ul>
+                    <ul class="tab-con-item">
+                        <li>
+                            <img src="uploads/like_04.png" alt="">
+                            <h5>宇博 10000mah 双USB Y7移动电源</h5>
+                            <div class="aside-price">￥19</div>
+                            <a href="#" class="as-addcar">加入购物车</a>
+                        </li>
+                    </ul>
+                    <ul class="tab-con-item">
+                        <li>
+                            <img src="uploads/like_04.png" alt="">
+                            <h5>宇博 10000mah 双USB Y7移动电源</h5>
+                            <div class="aside-price">￥19</div>
+                            <a href="#" class="as-addcar">加入购物车</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- match -->
+            <div class="match fn-fr">
+                <div class="match-title">
+                    <h5>选择搭配</h5>
+                </div>
+                <div class="match-con">
+                    <a href="javascript:;" class="match-prev"></a>
+                    <a href="javascript:;" class="match-next"></a>
+                    <div class="match-list">
+                        <ul>
+                            <li>精品</li>
+                            <li>iphone配件</li>
+                            <li>蓝牙耳机</li>
+                            <li>自拍杆</li>
+                            <li>数据线</li>
+                            <li>其他手机配件</li>
+                            <li>U盘</li>
+                        </ul>
+                    </div>
+                    <div class="match-tab-con fn-fl">
+                        <ul class="">
+                            <li class="current">
+                                <img src="uploads/and1_03.png" alt="">
+                                <p>￥5299</p>
+                            </li>
+                            <div class="fn-fl match-add fn-fs16">+</div>
+                            <li>
+                                <label for="match-price1">
+                                    <img src="uploads/and2_05.png" alt="">
+                                    <h5>Feless菲勒斯VR眼镜</h5>
+                                </label>
+                                <p><input type="checkbox" id="match-price1"><em>￥39</em></p>
+                            </li>
+                            <li>
+                                <label for="match-price2">
+                                    <img src="uploads/and2_05.png" alt="">
+                                    <h5>Feless菲勒斯VR眼镜</h5>
+                                </label>
+                                <p><input type="checkbox" id="match-price2"><em>￥39</em></p>
+                            </li>
+                            <li>
+                                <label for="match-price3">
+                                    <img src="uploads/and2_05.png" alt="">
+                                    <h5>Feless菲勒斯VR眼镜</h5>
+                                </label>
+                                <p><input type="checkbox" id="match-price3"><em>￥39</em></p>
+                            </li>
+                            <li>
+                                <label for="match-price4">
+                                    <img src="uploads/and2_05.png" alt="">
+                                    <h5>Feless菲勒斯VR眼镜</h5>
+                                </label>
+                                <p><input type="checkbox" id="match-price4"><em>￥39</em></p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="match-addCar fn-fl">
+                        已选够0件搭配
+                        <p>套餐价:</p>
+                        <div class="fn-fs18 match-addprice">￥5299.00</div>
+                        <a href="#">加入购物车</a>
+                    </div>
+                </div>
+            </div>
+            <!-- detail -->
+            <div class="detail fn-fr">
+                <div class="detail-tab-list">
+                    <ul>
+                        <li>商品介绍</li>
+                        <li class="current">规格与包装</li>
+                        <li>售后保障</li>
+                        <li>商品评价（5000）</li>
+                        <li>手机社区</li>
+                    </ul>
+                </div>
+                <div class="detail-tab-con">
+                    <div class="item">
+                        <ul class="item-info">
+                            <li>分辨率：1920*1080(FHD)</li>
+                            <li>后置摄像头：1200万像素</li>
+                            <li>前置摄像头：500万像素</li>
+                            <li>核      数：其他</li>
+                            <li>频      率：以官网信息为准</li>
+                            <li>品牌： Apple <i class="fa fa-heart"></i> 关注</li>
+                            <li>商品名称：APPLEiPhone 6s Plus</li>
+                            <li>商品编号：1861098</li>
+                            <li>商品毛重：0.51kg</li>
+                            <li>商品产地：中国大陆</li>
+                            <li>热点：指纹识别，Apple Pay，金属机身，拍照神器</li>
+                            <li>系统：苹果（IOS）</li>
+                            <li>像素：1000-1600万</li>
+                            <li>机身内存：64GB</li>
+                        </ul>
+                        <p>
+                            <a href="#" class="fn-fr more">查看更多参数>></a>
+                        </p>
+                        <img src="uploads/intro01.png" alt="">
+                        <img src="uploads/intro02.png" alt="">
+                        <img src="uploads/intro03.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- main主体部分 end -->
+
+    <!-- 猜你喜欢 -->
+    <div class="detaile-like container">
+        <h4>猜你喜欢</h4>
+        <div class="like-con">
+            <ul>
+                <li>
+                    <a href="javascript:;"><img src="./uploads/like_01.png" alt=""></a>
+                    <p>DELL 戴尔 Ins 15MR-7528SS 15英寸 银色 笔记</p>
+                    <span  class="like-price">￥3699</span>
+                    <div class="like-num">已有<i >6</i>人评价</div>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="./uploads/like_02.png" alt=""></a>
+                    <p>DELL 戴尔 Ins 15MR-7528SS 15英寸 银色 笔记</p>
+                    <span class="like-price">￥3699</span>
+                    <div  class="like-num">已有<i>6</i>人评价</div>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="./uploads/like_03.png" alt=""></a>
+                    <p>DELL 戴尔 Ins 15MR-7528SS 15英寸 银色 笔记</p>
+                    <span class="like-price">￥3699</span>
+                    <div  class="like-num">已有<i>6</i>人评价</div>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="./uploads/like_04.png" alt=""></a>
+                    <p>DELL 戴尔 Ins 15MR-7528SS 15英寸 银色 笔记</p>
+                    <span class="like-price">￥3699</span>
+                    <div  class="like-num">已有<i>6</i>人评价</div>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="./uploads/like_05.png" alt=""></a>
+                    <p>DELL 戴尔 Ins 15MR-7528SS 15英寸 银色 笔记</p>
+                    <span class="like-price">￥3699</span>
+                    <div  class="like-num">已有<i>6</i>人评价</div>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="./uploads/like_06.png" alt=""></a>
+                    <p>DELL 戴尔 Ins 15MR-7528SS 15英寸 银色 笔记</p>
+                    <span class="like-price">￥3699</span>
+                    <div  class="like-num">已有<i>6</i>人评价</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- 底部 start -->
+    <footer>
+        <div class="container">
+            <div class="mod-server">
+                <ul>
+                    <li>
+                        <i class="mod-server-icon mod-server-zheng"></i>
+                        <div class="mod-server-tit">
+                            <h5>正品保障</h5>
+                            <p>正品保障，提供发票</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="mod-server-icon mod-server-kuai"></i>
+                        <div class="mod-server-tit">
+                            <h5>急速物流</h5>
+                            <p>急速物流，极速送达</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="mod-server-icon mod-server-bao"></i>
+                        <div class="mod-server-tit">
+                            <h5>无忧售后</h5>
+                            <p>7天无理由退换货</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="mod-server-icon mod-server-tese"></i>
+                        <div class="mod-server-tit">
+                            <h5>特色服务</h5>
+                            <p>私人订制家电套餐</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="mod-server-icon mod-server-help"></i>
+                        <div class="mod-server-tit">
+                            <h5>帮助中心</h5>
+                            <p>您的购物指南</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="mod-help">
+                <dl class="mod-help-item">
+                    <dt>购物指南</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">会员介绍</a></dd>
+                    <dd><a href="#">生活旅行/团购</a></dd>
+                    <dd><a href="#">常见问题</a></dd>
+                    <dd><a href="#">大家电</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                </dl>
+                <dl class="mod-help-item">
+                    <dt>配送方式</dt>
+                    <dd><a href="#">上门自提</a></dd>
+                    <dd><a href="#">211限时达</a></dd>
+                    <dd><a href="#">配送服务查询</a></dd>
+                    <dd><a href="#">配送费收取标准</a></dd>
+                    <dd><a href="#">海外配送</a></dd>
+                </dl>
+                <dl class="mod-help-item">
+                    <dt>支付方式</dt>
+                    <dd><a href="#">货到付款</a></dd>
+                    <dd><a href="#">在线支付</a></dd>
+                    <dd><a href="#">分期付款</a></dd>
+                    <dd><a href="#">邮局汇款</a></dd>
+                    <dd><a href="#">公司转账</a></dd>
+                </dl>
+                <dl class="mod-help-item">
+                    <dt>售后服务</dt>
+                    <dd><a href="#">售后政策</a></dd>
+                    <dd><a href="#">价格保护</a></dd>
+                    <dd><a href="#">退款说明</a></dd>
+                    <dd><a href="#">返修/退换货</a></dd>
+                    <dd><a href="#">取消订单</a></dd>
+                </dl>
+                <dl class="mod-help-item">
+                    <dt>特色服务</dt>
+                    <dd><a href="#">夺宝岛</a></dd>
+                    <dd><a href="#">DIY装机</a></dd>
+                    <dd><a href="#">延保服务</a></dd>
+                    <dd><a href="#">品优购E卡</a></dd>
+                    <dd><a href="#">品优购通信</a></dd>
+                </dl>
+                <dl class="mod-help-item mod-help-app">
+                    <dt>帮助中心</dt>
+                    <dd>
+                        <img src="images/wx_cz.jpg" alt="">
+                        <p>品优购客户端</p>
+                    </dd>
+                </dl>
+            </div>
+            <!-- mod_copyright -->
+            <div class="mod-copyright">
+                <p class="mod-copyright-links">
+                    <a href="#">关于我们</a>|
+                    <a href="#">联系我们</a>|
+                    <a href="#">联系客服</a>|
+                    <a href="#">商家入驻</a>|
+                    <a href="#">营销中心</a>|
+                    <a href="#">手机品优购</a>|
+                    <a href="#">友情链接</a>|
+                    <a href="#">销售联盟</a>|
+                    <a href="#">品优购社区</a>|
+                    <a href="#">品优购公益</a>|
+                    <a href="#">English&nbsp;Site</a>|
+                    <a href="#">Contact&nbsp;U</a>
+                </p>
+                <p>地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：10096 电话：400-618-4000 传真：010-82935100 邮箱：zhangsan@cast.cn</p>
+                <p>京ICP 备 08001421 号 &copy;京公网安备 110108007702</p>
+            </div>
+        </div>
+    </footer>
+    <!-- 底部 end -->
+</body>
+</html>

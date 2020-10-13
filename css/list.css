@@ -1,0 +1,172 @@
+@charset "utf-8";
+/*
+ * ==============================
+ * @description: [WebSite] 公共样式模块
+ * @author: ---
+ * @update: ---
+ * ==============================
+*/
+/* 顶部快捷导航 start */
+.border-current {
+  border: 1px solid #e12228;
+}
+/* 顶部秒杀 */
+.sk {
+  position: absolute;
+  top: 40px;
+  left: 185px;
+  padding: 5px 0 0 15px;
+  height: 32px;
+  border-left: 1px solid #c81623;
+}
+/* nav */
+nav {
+  overflow: hidden;
+}
+.sk-list li {
+  margin: 0 25px;
+  float: left;
+  line-height: 45px;
+}
+.sk-list li a {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+}
+.sk-list li a:hover {
+  color: #c81623;
+}
+.sk-con li {
+  float: left;
+  margin: 0 20px;
+  line-height: 45px;
+}
+.sk-con li a {
+  font-size: 14px;
+  font-weight: 700;
+}
+.sk-con li a i {
+  margin-left: 5px;
+}
+/* 列表页内容区域 */
+.sk-bd {
+  overflow: hidden;
+  margin-top: 25px;
+}
+.sk-bd ul {
+  width: 1212px;
+}
+.sk-bd li {
+  float: left;
+  margin: 0 12px 15px 0;
+}
+.sk-goods {
+  width: 288px;
+  height: 458px;
+  border: 1px solid transparent;
+  transition: all 0.2s;
+}
+.sk-goods:hover {
+  border: 1px solid #e12228;
+}
+.sk-goods img {
+  margin: 22px 42px 10px;
+}
+.sk-goods-title {
+  padding: 10px;
+  line-height: 25px;
+  font-size: 14px;
+  color: #666;
+  font-weight: normal;
+}
+.sk-goods-price {
+  padding: 0 10px;
+  font-size: 22px;
+  color: #c81623;
+}
+.sk-goods-price em {
+  font-size: 14px;
+  font-weight: 700;
+  color: #a4a4a4;
+  text-decoration: line-through;
+}
+.sk-goods-progress {
+  padding: 10px;
+}
+.sk-goods-progress em,
+.sk-goods-progress i {
+  color: #c81623;
+}
+.sk-goods-progress .bar {
+  display: inline-block;
+  margin: 0 10px;
+  width: 130px;
+  height: 10px;
+  vertical-align: middle;
+  border: 1px solid #c81623;
+  border-radius: 5px;
+}
+.sk-goods-progress .bar .bar-in {
+  width: 87%;
+  height: 100%;
+  background-color: #c81623;
+}
+.sk-goods-buy {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  font-size: 22px;
+  color: #fff;
+  text-align: center;
+  background-color: #c81623;
+  transition: all 0.5;
+}
+.sk-goods-buy:hover {
+  color: #fff;
+  font-size: 25px;
+}
+/* 分页 */
+.page {
+  margin: 40px 0;
+  text-align: center;
+}
+.page a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  border: 1px solid #ccc;
+  background-color: #f7f7f7;
+}
+.page a.pn-prev,
+.page a.pn-next {
+  width: 83px;
+}
+.page a.current {
+  border: 1px solid transparent;
+  background: transparent;
+}
+.page a.dotted {
+  border: 1px solid transparent;
+  background: transparent;
+}
+.page a:hover {
+  border: 1px solid transparent;
+  background: transparent;
+}
+.page .page-skip input {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #ccc;
+  text-align: center;
+  transition: all 0.5s;
+}
+.page .page-skip input:focus {
+  width: 88px;
+  border-color: #00A1D6;
+}
+.page .page-skip button {
+  width: 54px;
+  height: 36px;
+  border: 1px solid #ccc;
+}

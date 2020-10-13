@@ -1,0 +1,113 @@
+@charset "utf-8";
+/*
+ * ==============================
+ * @description: [WebSite] 公共样式模块
+ * @author: ---
+ * @update: ---
+ * ==============================
+*/
+
+@border_color:#ccc;
+@color:#c81623;
+/* logo */
+.logo{
+    margin:16px 0 5px 10px;
+}
+/* 主体部分 */
+.login-main{
+    background-color: #7e00ff;
+}
+/* 登陆框 */
+.login-con{
+    position: relative;
+    height:486px;
+    background: url(../images/loginbg.png) no-repeat  101px 36px ;
+}
+.login-module{
+    position:absolute;
+    right:0;
+    top:50%;
+    padding:22px 38px;
+    margin-top:-181px;
+    width:379px;
+    height: 362px;
+    background-color: #fff;
+    .login-module-title{
+        a{
+            display: inline-block;
+            width:149px;
+            font-size:18px;
+            &.saoma{
+                border-right:1px solid #ccc;
+                text-align: left;
+            }
+            &.zhanghao{
+                text-align: right;
+            }
+        }
+    }
+    .current{
+        color:@color;
+    }
+    .login-info{
+        padding-left:10px;
+        margin:22px 0 10px;
+        width: 303px;
+        height: 26px;
+        line-height:26px;
+        color:#666;
+        background: #fffdee;
+        border: 1px solid #f5eecf;
+    }
+    input{
+        margin-bottom:10px;
+        width:266px;
+        height:36px;
+        text-indent:10px;
+        border:1px solid #bbbaba;
+        border-left:none;
+    }
+    i{
+        display:inline-block;
+        width:36px;
+        height:36px;
+        background-color: #ccc;
+        border:1px solid #bbbaba;
+        border-right:none;
+        color:#fff;
+        line-height: 37px;
+        font-size:16px;
+        text-align:center;
+
+    }
+    .check{
+        position: relative;
+        margin:10px 0;
+        width:100%;
+        color:#b3b3b3;
+        input{
+            position: relative;
+            top:2px;
+            margin-right:5px;
+            width:14px;
+            height:14px;
+            border:1px solid #b3b3b3;
+        }
+        a{
+            color:#333;
+        }
+    }
+    .btn{
+        width:100%;
+        height:41px;
+        border:none;
+        background: #c81623;
+        color:#fff;
+    }
+    .login-module-icon{
+        a{
+            color:#1474AF;
+        }
+    }
+
+}

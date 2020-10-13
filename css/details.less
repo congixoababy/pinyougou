@@ -1,0 +1,536 @@
+@charset "utf-8";
+/*
+ * ==============================
+ * @description: [WebSite] 公共样式模块
+ * @author: ---
+ * @update: ---
+ * ==============================
+*/
+
+@border_color:#ccc;
+@color:#c81623;
+
+/* main主体部分 */
+/* 面包屑导航 */
+.de-container{
+    margin-top: 20px;
+}
+.crumb-wrap{
+    a:first-child{
+        font-weight: 700;
+    }
+    i{
+        margin:0 10px;
+    }
+}
+
+/* 产品介绍 */
+/* 预览区域 */
+.preview-wrap{
+    width:400px;
+    height:590px;
+    margin-top:10px;
+}
+.preview-img{
+    overflow: hidden;
+    width:400px;
+    height:400px; 
+    border:1px solid #ccc;
+}
+.preview-list{
+    position: relative;
+    margin-top:50px;
+    height:60px;
+    .list-item{
+        margin:0 auto;
+        width:320px;
+        height:60px;
+        li{
+            float:left;
+            margin:0 2px;
+            width:60px;
+            height:60px;
+            border:2px solid transparent;
+            &.current{
+                border-color:@color;
+            }
+            &:hover{
+                .current;
+            }
+        }
+    }
+}
+.arrow-prev,.arrow-next{
+    position: absolute;
+    top:15px;
+    width:22px;
+    height:32px;
+}
+.arrow-prev{
+    left:0;
+    background:url(../uploads/disabled-prev.png) no-repeat;
+}
+.arrow-next{
+    right:0;
+    background:url(../uploads/disabled-next.png) no-repeat;
+}
+.preview-info{
+    margin-top:25px;
+    li{
+        float:left;
+        margin-right:30px;
+        i{
+            margin-right:5px;
+        }
+    }
+    .preview-info-share{
+        i{
+            color:@color;
+        }
+    }
+    .preview-info-heart{
+        i{
+            color:@color;
+        }
+        em{
+            margin-left:5px;
+        }
+    }
+    .preview-info-contrast{
+        i{
+            color:@border_color;
+        }
+    }
+}
+/* 详细信息 */
+.itemifo-wrap{
+    width:718px;
+}
+.sku-name{
+        height:30px;
+        font-weight: 700;
+        color:#333;
+}
+.news{
+    height:33px;
+    color:@color;
+}
+.summary{
+    dl{
+        overflow:hidden;
+    }
+    dt{
+        float:left;
+        padding-left:10px;
+        margin-right:10px;
+        width:60px;
+        line-height:36px;
+        color:#282828;
+        font-weight: normal;
+        text-align: justify;
+        text-align-last: justify;
+    }
+    dd{
+        float:left;
+        color:#999;
+    }
+}
+.summary-price,.summary-promotion{
+    position: relative;
+    padding:10px 0;
+    background-color:#fee9eb;
+    .price{
+        font-size: 24px;
+        color:@color;
+    }
+    a{
+        color:@color;
+    }
+}
+.remark{
+    position: absolute;
+    top:20px;
+    right:10px;
+    span{
+        color:#1474af;
+    }
+}
+.summary-promotion{
+    padding-top:0;
+    dd{
+        width:550px;
+        line-height:36px;
+    }
+    em{
+        display:inline-block;
+        margin-right:5px;
+        width:40px;
+        height:24px;
+        line-height:24px;
+        color:#fff;
+        background-color: @color;
+        text-align:center;
+    }
+    a{
+        margin-left:10px;
+    }
+}
+.summary-support{
+    dd{
+        line-height:36px;
+    }
+}
+.choose-color{
+    a{
+        display: inline-block;
+        width:80px;
+        height:41px;
+        line-height:41px;
+        background-color: #f7f7f7;
+        text-align:center;
+        border:1px solid #ededed;
+        &.current{
+            border-color: @color;
+        }
+        &:hover{
+         .current;   
+        }
+    }
+}
+.choose-version,.choose-capacity,.choose-type{
+    margin-top:10px;
+    a{
+        display: inline-block;
+        padding: 0 12px;
+        line-height:32px;
+        background-color: #f7f7f7;
+        text-align:center;
+        border:1px solid #ededed;
+        &.current{
+            border-color: @color;
+        }
+        &:hover{
+         .current;   
+        }
+    }
+}
+.choose-btns{
+    margin:20px 0;
+}
+.choose-amount{
+    position:relative;
+    width:50px;
+    height: 46px;
+    input{
+        width:33px;
+        height:44px;
+        line-height: 44px;
+        text-align:center;
+        border:1px solid @border_color;
+    }
+    a{
+        position:absolute;
+        right:3px;
+        width:15px;
+        height:22px;
+        text-align: center;
+        line-height:22px;
+        border:1px solid @border_color;
+        background-color: #f1f1f1;
+        &.add{
+            top:0;
+        }
+        &.reduce{
+            bottom:2px;
+            /* 禁止鼠标 */
+            cursor:not-allowed;
+        }
+    }
+}
+.add-car{
+    display:block;
+    margin-left:10px;
+    width:142px;
+    height:46px;
+    line-height:46px;
+    color:#fff;
+    background-color: @color;
+    text-align:center;
+    font-weight: 700;
+}
+.choose-border{
+    margin-left:22px;
+    width:314px;
+    content:'';
+    border-top:1px solid @border_color;
+}
+/* 产品细节 */
+.product-detail{
+    margin-bottom:50px;
+}
+.aside{
+    width:210px;
+    border:1px solid @border_color;
+}
+.tab-list{
+    height:34px;
+    background-color:#f1f1f1;
+    li{
+        float:left;
+        width:104px;
+        height:34px;
+        line-height:34px;
+        border-bottom:1px solid @border_color;
+        text-align: center;
+        &.current{
+            background-color: #fff;
+            border-bottom:none;
+            color:@color;
+        }
+        &:hover{
+            .current;
+        }
+    }
+    .first-tab{
+        width:104px;
+    }
+    .second-tab{
+        border-left:1px solid @border_color;
+    }
+}
+.tab-con{
+    padding:0 10px;
+    
+}
+.tab-con-list{
+    li{
+        float:left;
+        width:94px;
+        height:28px;
+        line-height:28px;
+        border-bottom:1px dashed @border_color;
+    }
+    p{
+        margin:5px auto;
+        display:inline-block;
+        width:190px;
+        height:30px;
+        line-height: 30px;
+        text-align: center;
+        border-bottom:1px solid @border_color;
+    }
+}
+.tab-con-item{
+    li{
+        border-bottom:1px solid @border_color;
+        &:last-child{
+            border:none;
+        }
+        img{
+            margin:0 0 0 20px;
+        }
+        h5{
+            /* 超出的文字省略号显示 */
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+    }
+}
+.aside-price{
+    font-weight: 700;
+}
+.as-addcar{
+    display:block;
+    margin:10px auto;
+    width:88px;
+    height:26px;
+    line-height:26px;
+    text-align: center;
+    border:1px solid @border_color;
+    background-color: #f1f1f1;
+}
+
+/* match */
+.match{
+    position: relative;
+    width:980px;
+    height:304px;
+    border:1px solid @border_color;
+}
+.match-next{
+    position:absolute;
+    top:150px;
+    right:172px;
+    width:24px;
+    height:36px;
+    background:#f1f1f1 url(../uploads/disabled-next.png) no-repeat 2px;
+}
+.match-title{
+    height:40px;
+    border-bottom:1px solid @border_color;
+    background-color: #f1f1f1;
+    h5{
+        float:left;
+        padding:0 20px;
+        height:40px;
+        line-height: 40px;
+        text-align: center;
+        background-color:@color;   
+        color:#fff;
+        border-bottom: 1px solid @border_color;
+    }
+}
+.match-list{
+    width:810px;
+    li{
+        float:left;
+        padding:20px;
+    }
+}
+.match-tab-con{
+    width:810px;
+    li{
+        float:left;
+        margin:0 15px;
+        text-align: center;
+        img{
+            border:1px solid transparent;
+            margin-bottom:15px;
+        }
+        &.current{
+            img{
+                border:1px solid @color;
+            }
+        }
+        &:hover{
+            .current;
+        }
+    }
+    h5{
+        color:#333;
+    }
+    p{
+        position: relative;
+        top:-5px;
+        color:@color;
+        input{
+            position:absolute;
+            left:28px;
+            top:-1px;
+            border-radius: 0;
+        }
+    }
+}
+.match-addCar{
+    position: absolute;
+    right:0;
+    top:40px;
+    padding:50px 10px;
+    width:168px;
+    height:262px;
+    border-left:1px solid @border_color;
+    line-height:32px;
+    color:#333;
+    p{
+        font-size:14px;
+        font-weight: 700;
+    }
+    .match-addprice{
+        color:@color;
+    }
+    a{
+        display:block;
+        margin-top:30px;
+        width:142px;
+        height:43px;
+        line-height:43px;
+        font-size:18px;
+        text-align: center;
+        color:#fff;
+        background-color: @color;
+    }
+}
+.match-add{
+    margin-top:60px;
+    font-weight: 700;
+}
+
+/* detail */
+.detail{
+    overflow: hidden;
+    width:980px;
+    margin-top:20px;
+}
+.detail-tab-list{
+    height:40px;
+    border:1px solid @border_color;
+    background-color: #f1f1f1;
+    li{
+        float:left;
+        padding:0 20px;
+        height:40px;
+        line-height: 40px;
+        text-align: center;
+        &.current{
+            height:40px;
+            background-color:@color;   
+            color:#fff;
+            border-bottom: 1px solid @border_color;
+        }
+    }
+}
+.item-info{
+    padding:20px;
+    li{
+        line-height:22px;
+    }
+}
+.more{
+    padding-right:20px;
+    font-weight:700;
+  }
+
+  /* 猜你喜欢 */
+  .detaile-like{
+      margin-bottom: 20px;
+      height: 335px;
+      border:1px solid #ddd;
+      h4{
+          padding-left: 20px;
+          width:100%;
+          height:36px;
+          background-color:#f1f1f1;
+          border-bottom:1px solid #ddd;
+          font-size:18px;
+          line-height:36px;
+          color:#333;
+      }
+  }
+  .like-con{
+      padding:20px 0 0 50px;
+      width:100%;
+      color:#333;
+      li{
+          float:left;
+          margin-right:50px;
+          width:140px;
+          img{
+              margin-bottom:10px;
+          }
+      }
+      .like-price{
+          font-size:16px;
+          color:@color;
+          font-weight: 700;
+          line-height:36px;
+      }
+      .like-num{
+          margin-top:10px;
+          color: #999;
+          i{
+              color:#005aa8;
+          }
+      }
+  }

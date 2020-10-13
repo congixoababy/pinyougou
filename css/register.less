@@ -1,0 +1,122 @@
+@charset "utf-8";
+/*
+ * ==============================
+ * @description: [WebSite] 公共样式模块
+ * @author: ---
+ * @update: ---
+ * ==============================
+*/
+
+@border_color:#ccc;
+@color:#c81623;
+
+/* 注册页面 */
+/* 头部 */
+.header{
+    height:84px;
+    border-bottom:2px solid @color;
+}
+.logo{
+    padding-top:15px;
+}
+.registerarea{
+    margin:20px 0;
+    height:520px;
+    border:1px solid @border_color;
+    h3{
+        padding:0 10px;
+        height:42px;
+        line-height:42px;
+        border-bottom:1px solid @border_color;
+        background-color: #f1f1f1;
+        font-size:18px;
+    }
+    a{
+        color:@color;
+    }
+}
+.reg-form{
+    margin:40px auto 0;
+    width:600px;
+    height:420px;
+    li{
+        line-height:36px;
+        margin-bottom:15px;
+    }
+    label{
+        display: inline-block;
+        width:100px;
+        height:36px;
+        line-height:36px;
+        text-align:right;
+        font-size:14px;
+        font-weight: normal;
+    }
+    .inp{
+        width:240px;
+        height:36px;
+        border:1px solid @border_color;
+    }
+}
+.error{
+    margin-left:10px;
+    color:@color;
+}
+.error-ico{
+    display:inline-block;
+    margin-top:-3px;
+    width:20px;
+    height:20px;
+    vertical-align:middle;
+    background: url(../uploads/error-ico_03.png) no-repeat;
+}
+.success{
+    margin-left:10px;
+    color:#40b83f;
+}
+.success-ico{
+    display:inline-block;
+    margin-top:-10px;
+    width:20px;
+    height:20px;
+    vertical-align:middle;
+}
+.safe{
+    margin:-20px 0;
+    padding-left:165px;
+    color:#b2b2b2;
+    em{
+        padding:0 12px;
+        color:#fff;
+    }
+}
+.ruo{
+    background-color:#de1111;
+}
+.zhong{
+    background-color:#40b83f;
+}
+.qiang{
+    background-color:#f79100;
+}
+.agree {
+    padding-left:100px;
+    margin-top:30px;
+    input{
+        vertical-align: middle;
+        margin-top:-3px;
+        margin-right:5px;
+    }
+    a{
+        color:#1ba1e6;
+    }
+}
+.over{
+    margin:30px 0 0 130px;
+    width:200px;
+    height:34px;
+    background-color: @color;
+    border:none;
+    color:#fff;
+    font-size:14px;
+}
