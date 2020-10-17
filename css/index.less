@@ -16,10 +16,21 @@
     height:455px;
     /* focus */
     .focus{
+        overflow: hidden;
         position:relative;
         width:720px;
         height:455px;
+        ul{
+            position: absolute;
+            top:0;
+            left:0;
+            width:600%;
+            li{
+                float:left;
+            }
+        }
         .arrow_prev{
+            display:none;
             position:absolute;
             top:50%;
             left:10px;
@@ -31,8 +42,10 @@
             font-size:30px;
             text-align: center;
             background: rgba(0, 0, 0, .3);
+            z-index: 2;
         }
         .arrow_next{
+            display:none;
             position:absolute;
             top:50%;
             right:10px;
@@ -44,6 +57,7 @@
             font-size:30px;
             text-align: center;
             background: rgba(0, 0, 0, .3);
+            z-index: 2;
         }
         .circle{
             position: absolute;
@@ -313,12 +327,31 @@
         font-size:12px;
         text-align:center;
         border-bottom:1px solid @border_color;
+        cursor: pointer;
         &.current{
             background-color: @color;
             color:#fff;
         }
         &:hover{
             .current
+        }
+
+    }
+}
+// 回到顶部
+.toTop{
+    position:fixed;
+    bottom:50px;
+    right:50px;
+    margin-top:30px;
+    background-color: @color;
+    color:#fff;
+    text-align: center;
+    cursor: pointer;
+    div{
+        width:32px;
+        &.topico{
+            border-bottom:1px dashed #fff;
         }
     }
 }

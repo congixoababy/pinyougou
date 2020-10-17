@@ -24,6 +24,9 @@
     <link rel="stylesheet" href="css/common.css">
     <!-- 引入首页样式 -->
     <link rel="stylesheet" href="css/index.css">
+    <!-- 引入动画文件 -->
+    <script src="./js/animate.js"></script>
+    <script src="./js/index.js"></script>
 </head>
 <body>
     <!-- 顶部快捷导航 start -->
@@ -132,22 +135,23 @@
         <div class="main">
             <!-- focus -->
             <div class="focus fn-fl">
-                <a href="#" class="arrow_prev fa fa-angle-left"></a>
-                <a href="#" class="arrow_next fa fa-angle-right"></a>
+                <a href="javascript:;" class="arrow_prev fa fa-angle-left"></a>
+                <a href="javascript:;" class="arrow_next fa fa-angle-right"></a>
                 <ul>
+                    <li>
+                        <a href="#"><img src="uploads/banner1.jpg" alt="" width="720" height="455"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="uploads/banner2.jpg" alt="" width="720" height="455"></a>
+                    </li>
                     <li>
                         <a href="#"><img src="uploads/banner3.jpg" alt="" width="720" height="455"></a>
                     </li>
+                    <li>
+                        <a href="#"><img src="uploads/banner4.jpg" alt="" width="720" height="455"></a>
+                    </li>
                 </ul>
                 <ol class="circle">
-                    <li></li>
-                    <li class="current"></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
                 </ol>
             </div>
             <!-- newsflash -->
@@ -497,6 +501,10 @@
             <li>金融彩票</li>
         </ul>
     </div>
+    <div class="toTop">
+        <div class="fa fa-angle-up fa-3x topico"></div>
+        <div class="topWord">回到顶部</div>
+    </div>
     <!-- 底部 start -->
     <footer>
         <div class="container">
@@ -611,5 +619,8 @@
         </div>
     </footer>
     <!-- 底部 end -->
+
+
+
 </body> 
 </html>

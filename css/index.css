@@ -15,11 +15,22 @@
   /* newsflash */
 }
 .main .focus {
+  overflow: hidden;
   position: relative;
   width: 720px;
   height: 455px;
 }
+.main .focus ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 600%;
+}
+.main .focus ul li {
+  float: left;
+}
 .main .focus .arrow_prev {
+  display: none;
   position: absolute;
   top: 50%;
   left: 10px;
@@ -31,8 +42,10 @@
   font-size: 30px;
   text-align: center;
   background: rgba(0, 0, 0, 0.3);
+  z-index: 2;
 }
 .main .focus .arrow_next {
+  display: none;
   position: absolute;
   top: 50%;
   right: 10px;
@@ -44,6 +57,7 @@
   font-size: 30px;
   text-align: center;
   background: rgba(0, 0, 0, 0.3);
+  z-index: 2;
 }
 .main .focus .circle {
   position: absolute;
@@ -310,6 +324,7 @@
   font-size: 12px;
   text-align: center;
   border-bottom: 1px solid #ccc;
+  cursor: pointer;
 }
 .fixedtool li.current {
   background-color: #c81623;
@@ -318,4 +333,20 @@
 .fixedtool li:hover {
   background-color: #c81623;
   color: #fff;
+}
+.toTop {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  margin-top: 30px;
+  background-color: #c81623;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+.toTop div {
+  width: 32px;
+}
+.toTop div.topico {
+  border-bottom: 1px dashed #fff;
 }
