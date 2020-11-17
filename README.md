@@ -2,7 +2,7 @@
 
 品优购静态页面
 
-预览地址：[pinyougou.com](http://bastuu.gitee.io/pinyougou/)
+预览地址：[pinyougou.com](https://congixoababy.github.io/pinyougou/)
 
 ## 连接位置
 
